@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!--sytling/css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <header><b>To Do List</b></header><hr>
+
+        <div id="categoryForm">
+            <label for="newCat">Add New Category: &nbsp;</label><input id="newCat" type="text">
+            <button class="btn btn-secondary" id="addCat">Add Category</button>
+        </div><br>
+
+        <div id="categories">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <h6>Categories:</h6>
+                  <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id=category>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home"><h4>Home</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#work"><h4>Work</h4></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <br>
+
+            <div id="home" class="toDoItems">
+                <div class="row mx-auto singleItem" contenteditable="true">
+                    <div class="col-10 listItems">
+                        To do: Call doctor
+                    </div> 
+                    <div class="col-2">
+                        <button class="btn btn-danger"><ion-icon name="checkmark-outline"></ion-icon></button>
+                    </div>
+                </div>
+        
+                <div class="row mx-auto singleItem" contenteditable="true">
+                    <div class="col-10 listItems">
+                        To do: 
+                    </div> 
+                    <div class="col-2">
+                        <button class="btn btn-danger"><ion-icon name="checkmark-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="work" class="toDoItems">
+                <div class="row mx-auto singleItem" contenteditable="true">
+                    <div class="col-10 listItems">
+                        To do: Make Team meeting
+                    </div> 
+                    <div class="col-2">
+                        <button class="btn btn-danger"><ion-icon name="checkmark-outline"></ion-icon></button>
+                    </div>
+                </div>
+        
+                <div class="row mx-auto singleItem" contenteditable="true">
+                    <div class="col-10 listItems">
+                        To do: 
+                    </div> 
+                    <div class="col-2">
+                        <button class="btn btn-danger"><ion-icon name="checkmark-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <div id="itemForm">
+            <label for="newItem">To Do Task: &nbsp;</label><input id="newItem" type="text">
+            <button class="btn btn-dark" id="addItem">Add item</button>
+        </div>
+        
+
+
+    </div>
+    <!--Bootstrap JS, jQuery, js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+
+    <script src="js/main.js"></script>
+    
+    <!--ion icon for check mark-->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    
+
+</body>
+</html>
